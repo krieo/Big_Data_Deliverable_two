@@ -1,16 +1,13 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
+import fileHandler
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    file_path = "phase2_train_v0.csv"
+    csv_data = fileHandler.read_csv_file(file_path)
+    i = 0
+    for row in csv_data:
+        print(row)
+        print(i)
+        i += 1
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
