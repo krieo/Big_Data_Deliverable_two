@@ -1,16 +1,18 @@
 import fileHandler
 
+#These are the variables to count how many instances there are
 num_aegypti = 0
 num_albopictus = 0
 num_anopheles = 0
 num_culex = 0
 num_culiseta = 0
 num_japonicus_koreicus = 0
+list_aegypti = []
 
 if __name__ == '__main__':
     file_path = "phase2_train_v0.csv"
     image_data_list = fileHandler.read_csv_file(file_path)
-
+#This reads the data from the file and prints it to the screen
     for i, image_data in enumerate(image_data_list):
         print(f"Image {i + 1}:")
         print(f"File Name: {image_data.img_fName}")
@@ -32,7 +34,6 @@ if __name__ == '__main__':
             num_culiseta += 1
         else:
             num_japonicus_koreicus += 1
-
 
 print(num_aegypti)
 print(num_albopictus)
