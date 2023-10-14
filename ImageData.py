@@ -1,3 +1,7 @@
+""""
+This class holds all of the information
+for each of the images
+"""
 class ImageData:
     def __init__(self, img_fName, img_w, img_h, bbx_xtl, bbx_ytl, bbx_xbr, bbx_ybr, class_label):
         self.img_fName = img_fName
