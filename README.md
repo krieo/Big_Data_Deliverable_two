@@ -1,0 +1,1 @@
+This was the initial build for the mosquito detection project, the final version is completely different from this, but it is nice to see where it started from, heres a link to the video: https://youtu.be/1cCUHKFZfcw
